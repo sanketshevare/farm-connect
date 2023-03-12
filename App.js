@@ -2,8 +2,8 @@ import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import Login from "./components/Login";
-import SignUp from "./components/SignUp";
+import Login from "./screens/Login";
+import SignUp from "./screens/SignUp";
 
 export default function App() {
   const Stack = createStackNavigator();
