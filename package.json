@@ -17,6 +17,7 @@
     "expo-linking": "~4.0.1",
     "expo-router": "^1.2.2",
     "expo-status-bar": "~1.4.4",
+    "firebase": "^9.17.2",
     "mdb-react-ui-kit": "^5.1.0",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
