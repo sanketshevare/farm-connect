@@ -6,7 +6,7 @@ import firebase from "firebase/compat/app";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 
-const SignUp = () => {
+const ForgotPassword = () => {
   const navigation = useNavigation();
 
   return (
@@ -31,47 +31,14 @@ const SignUp = () => {
           ></TextInput>
         </View>
 
-        <View style={tw`flex flex-row`}>
-          <Ionicons
-            name="md-lock-closed"
-            size={34}
-            style={tw`h-11 web:h-12 p-1 rounded-l-md relative bg-white text-gray-500 shadow-sm`}
-          />
-          <TextInput
-            placeholder="Password"
-            secureTextEntry={true}
-            style={tw`bg-white  rounded-r-lg p-2 web:p-4 w-64 web:w-98 mb-5 focus:outline-none shadow-sm`}
-          ></TextInput>
-        </View>
-
-        <View style={tw`flex flex-row`}>
-          <Ionicons
-            name="md-lock-closed"
-            size={34}
-            style={tw`h-11 web:h-12 p-1 rounded-l-md relative bg-white text-gray-500 shadow-sm`}
-          />
-          <TextInput
-            placeholder="Confirm Password"
-            secureTextEntry={true}
-            style={tw`bg-white  rounded-r-lg p-2 web:p-4 w-64 web:w-98 mb-5 focus:outline-none shadow-sm`}
-          ></TextInput>
-        </View>
-
         <TouchableOpacity
           style={tw`bg-white rounded-lg p-3 w-auto mb-5 focus:outline-none shadow-sm`}
         >
-          <Text>Signup</Text>
+          <Text>Submit</Text>
         </TouchableOpacity>
-
-        <Text
-          style={tw`web:text-lg `}
-          onPress={() => navigation.navigate("Login")}
-        >
-          Already have an account? Login
-        </Text>
       </View>
     </View>
   );
 };
 
-export default SignUp;
+export default ForgotPassword;
