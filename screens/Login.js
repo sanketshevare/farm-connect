@@ -51,8 +51,9 @@ const Login = () => {
 
         <TouchableOpacity
           style={tw`bg-white rounded-lg p-3 w-auto mb-5 focus:outline-none shadow-sm`}
+
           onPress={() => navigation.navigate("Home")}
-          
+
         >
           <Text>Login</Text>
         </TouchableOpacity>
