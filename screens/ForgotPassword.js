@@ -5,7 +5,6 @@ import tw from "twrnc";
 import firebase from "firebase/compat/app";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
-
 const ForgotPassword = () => {
   const navigation = useNavigation();
 
@@ -26,7 +25,6 @@ const ForgotPassword = () => {
           />
           <TextInput
             placeholder="Email"
-            
             style={tw`bg-white  rounded-r-lg p-2 web:p-4 w-64 web:w-98 mb-5 focus:outline-none shadow-sm`}
           ></TextInput>
         </View>
@@ -36,13 +34,15 @@ const ForgotPassword = () => {
         >
           <Text>Submit</Text>
         </TouchableOpacity>
+        <TouchableOpacity
+        onPress={() => navigation.navigate("Login")}
+          style={tw` rounded-lg p-3 w-auto mb-5 focus:outline-none shadow-sm`}
+        >
+          <Text>Back to Login</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
 };
 
-
 export default ForgotPassword;
-
-
-

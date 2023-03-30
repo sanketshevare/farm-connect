@@ -9,7 +9,7 @@ import Posts from "../footer/Posts";
 import News from "../footer/News";
 
 function Home() {
-  const [selected, setSelected] = React.useState(1);
+  const [selected, setSelected] = React.useState(0);
   const [index, setIndex] = React.useState(0);
 function switchScreen(index) {
     setIndex(index)
